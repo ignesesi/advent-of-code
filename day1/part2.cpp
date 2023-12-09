@@ -7,7 +7,7 @@ using namespace std;
 string INPUT_NAME = "part2.in";
 string OUTPUT_NAME = "part2.out";
 
-int get_number (string line) {
+int get_number(string line) {
     // cout << "#" << line << " ";
     int first_digit = -1, last_digit = -1;
     size_t first_index = string::npos, last_index = string::npos;

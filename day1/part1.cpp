@@ -5,7 +5,7 @@ using namespace std;
 string INPUT_NAME = "part1.in";
 string OUTPUT_NAME = "part1.out";
 
-int get_number (string line) {
+int get_number(string line) {
     //cout << "#" << line << " ";
     int first = -1, last = -1;
     for (char& c : line) {

@@ -2,11 +2,11 @@
 #include <fstream>
 using namespace std;
 
-int solve (const string& line) {
+int solve(const string& line) {
     return 0;
 }
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
     /// DEFAULT FILE NAMES
     string INPUT_NAME = "part1.in";
     string OUTPUT_NAME = "part1.out";

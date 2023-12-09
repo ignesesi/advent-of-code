@@ -15,7 +15,7 @@ int char_to_color(char c) {
     return -1;
 }
 
-long long solve (const string& line) {
+long long solve(const string& line) {
     int number = 0;
     int color = -1;
     /**    color  limit
@@ -80,7 +80,7 @@ long long solve (const string& line) {
     return min_col[0]*min_col[1]*min_col[2];
 }
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
     //char* ptr = reinterpret_cast<char*>(0x47);
     //(&ptr) = 14;

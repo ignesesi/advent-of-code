@@ -31,7 +31,7 @@ bool check_ngbrs(const vector<string>& table, int row, int col) {
     return false;
 }
 
-int solve (const vector<string>& table) {
+int solve(const vector<string>& table) {
     long long ans = 0;
     size_t num_rows = table.size();
     size_t num_cols = table[0].size();
@@ -59,7 +59,7 @@ int solve (const vector<string>& table) {
     return ans;
 }
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
     /// DEFAULT FILE NAMES
     string INPUT_NAME = "part1.in";
     string OUTPUT_NAME = "part1.out";

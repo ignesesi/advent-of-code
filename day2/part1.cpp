@@ -15,7 +15,7 @@ int char_to_color(char c) {
     return -1;
 }
 
-bool solve (const string& line) {
+bool solve(const string& line) {
     int number = 0;
     int color = -1;
     /**    color  limit
@@ -79,7 +79,7 @@ bool solve (const string& line) {
     return true;
 }
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 
     //char* ptr = reinterpret_cast<char*>(0x47);
     //(&ptr) = 14;
