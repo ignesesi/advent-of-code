@@ -69,14 +69,14 @@ int main(int argc, char *argv[]) {
     /// OPEN INPUT
     ifstream input_file(INPUT_NAME);
     if (!input_file.is_open()) {
-        cout << "Unable to open input file.\n";
+        cout << "Unable to open input file " << INPUT_NAME << ".\n";
         return -1;
     }
 
     /// OPEN OUTPUT
     ofstream output_file(OUTPUT_NAME);
     if (!output_file.is_open()) {
-        cout << "Unable to open output file.\n";
+        cout << "Unable to open output file " << OUTPUT_NAME << ".\n";
         return -1;
     }
 
