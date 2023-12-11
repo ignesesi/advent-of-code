@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-int solve(const vector<string>& table) {
+long long solve(const vector<string>& table) {
     const int ROWS = table.size();
     const int COLS = table[0].size();
     bool is_gal_row[ROWS] = {};
@@ -18,18 +18,18 @@ int solve(const vector<string>& table) {
         }
     }
 
-    vector<pair<int, int> > galaxies;
+    vector<pair<long long, long long> > galaxies;
 
-    int dr = 0, dc = 0;
+    long long dr = 0, dc = 0;
     for (int r = 0; r < ROWS; r++) {
         if (!is_gal_row[r]) {
-            dr++;
+            dr = dr - 1 + 1000000;
             continue;
         }
         dc = 0;
         for (int c = 0; c < COLS; c++) {
             if (!is_gal_col[c]) {
-                dc++;
+                dc = dc - 1 + 1000000;
                 continue;
             }
             if (table[r][c] == '#') {
@@ -38,7 +38,7 @@ int solve(const vector<string>& table) {
         }
     }
 
-    int ans = 0;
+    long long ans = 0;
 
     for (int i = 0; i < galaxies.size(); i++) {
         for (int j = i + 1; j < galaxies.size(); j++) {
@@ -51,8 +51,8 @@ int solve(const vector<string>& table) {
 
 int main(int argc, char *argv[]) {
     /// DEFAULT FILE NAMES
-    string INPUT_NAME = "part1.in";
-    string OUTPUT_NAME = "part1.out";
+    string INPUT_NAME = "part2.in";
+    string OUTPUT_NAME = "part2.out";
 
     /// GET FILE NAMES FROM COMMAND LINE
     if (argc == 2) {
