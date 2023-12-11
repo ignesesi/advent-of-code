@@ -7,7 +7,9 @@ fi
 
 day=$1
 
-cp ${day}/part1.cpp ${day}/part2.cpp
-cp ${day}/part1.in ${day}/part2.in
-cp ${day}/test1.in ${day}/test2.in
+cd ${day}
+
+cp part1.cpp part2.cpp
+cp part1.in part2.in
+cp test1.in test2.in
 
